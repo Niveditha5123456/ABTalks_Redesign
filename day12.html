@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Day 12 | ABTalks</title>
+
+<link rel="stylesheet" href="day12.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Background -->
+
+<div class="bg-circle circle1"></div>
+<div class="bg-circle circle2"></div>
+
+<!-- Header -->
+
+<header class="header">
+
+<a href="dashboard.html" class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<div>
+
+<h2>Day 12</h2>
+
+<p>API Security Track</p>
+
+</div>
+
+<div class="day-badge">
+
+12 / 60
+
+</div>
+
+</header>
+
+<!-- Challenge Card -->
+
+<section class="challenge-card">
+
+<div class="difficulty">
+
+<span class="medium">
+
+🟡 Medium
+
+</span>
+
+<span>
+
+⏱ 45 mins
+
+</span>
+
+</div>
+
+<h1>
+
+Build an API Rate Limiter
+
+</h1>
+
+<p>
+
+Prevent API abuse by limiting the number of requests from a single IP address within a specific time window.
+
+</p>
+
+<div class="goal-box">
+
+<h3>
+
+🎯 Goal
+
+</h3>
+
+<p>
+
+Implement middleware that tracks incoming requests and blocks clients exceeding the allowed request limit.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Requirements -->
+
+<section class="requirements">
+
+<h2>
+
+✅ Requirements
+
+</h2>
+
+<div class="req-card">
+
+<i class="fa-solid fa-check"></i>
+
+<p>Use Express.js Middleware</p>
+
+</div>
+
+<div class="req-card">
+
+<i class="fa-solid fa-check"></i>
+
+<p>Store request count in memory</p>
+
+</div>
+
+<div class="req-card">
+
+<i class="fa-solid fa-check"></i>
+
+<p>Return HTTP 429 when limit is exceeded</p>
+
+</div>
+
+<div class="req-card">
+
+<i class="fa-solid fa-check"></i>
+
+<p>Test using Postman or Thunder Client</p>
+
+</div>
+
+</section>
+
+<!-- Learning Resources -->
+
+<section class="resources">
+
+<h2>
+
+📚 Helpful Resources
+
+</h2>
+
+<div class="resource-card">
+
+<i class="fa-brands fa-youtube"></i>
+
+<div>
+
+<h3>Express.js Middleware Tutorial</h3>
+
+<p>15 min video</p>
+
+</div>
+
+<a href="#">
+
+Open
+
+</a>
+
+</div>
+
+<div class="resource-card">
+
+<i class="fa-solid fa-book"></i>
+
+<div>
+
+<h3>HTTP Status Codes</h3>
+
+<p>Official Documentation</p>
+
+</div>
+
+<a href="#">
+
+Read
+
+</a>
+
+</div>
+
+<div class="resource-card">
+
+<i class="fa-brands fa-github"></i>
+
+<div>
+
+<h3>Starter Repository</h3>
+
+<p>Clone & Start Coding</p>
+
+</div>
+
+<a href="#">
+
+Clone
+
+</a>
+
+</div>
+
+</section>
+
+<!-- Part 2 Starts Here -->
+ <!-- ===========================
+     SUBMISSION SECTION
+=========================== -->
+
+<section class="submission">
+
+    <h2>📤 Submit Today's Work</h2>
+
+    <p class="submit-text">
+        Share today's progress to maintain your streak.
+    </p>
+
+    <!-- GitHub -->
+
+    <div class="input-group">
+
+        <label>
+            <i class="fa-brands fa-github"></i>
+            GitHub Repository / Commit URL
+        </label>
+
+        <input
+            type="url"
+            placeholder="https://github.com/username/repository/commit/..."
+        >
+
+    </div>
+
+    <!-- LinkedIn -->
+
+    <div class="input-group">
+
+        <label>
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn Post URL
+        </label>
+
+        <input
+            type="url"
+            placeholder="https://linkedin.com/posts/..."
+        >
+
+    </div>
+
+    <!-- Screenshot -->
+
+    <div class="input-group">
+
+        <label>
+
+            <i class="fa-solid fa-image"></i>
+
+            Upload Screenshot (Optional)
+
+        </label>
+
+        <input type="file" accept="image/*">
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     REFLECTION
+=========================== -->
+
+<section class="reflection">
+
+    <h2>📝 Reflection</h2>
+
+    <p>
+
+        What did you learn while completing today's challenge?
+
+    </p>
+
+    <textarea
+        rows="6"
+        placeholder="Example:
+Today I learned how Express middleware intercepts incoming requests before they reach the API routes. I also implemented request limiting using an in-memory object..."
+    ></textarea>
+
+</section>
+
+<!-- ===========================
+     AI REFLECTION
+=========================== -->
+
+<section class="ai-summary">
+
+    <div class="ai-header">
+
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+        <h2>AI Learning Summary</h2>
+
+    </div>
+
+    <p>
+
+        After submission, ABTalks AI will automatically generate:
+
+    </p>
+
+    <div class="ai-card">
+
+        <div class="ai-item">
+
+            🤖
+
+            <div>
+
+                <h3>Learning Summary</h3>
+
+                <p>
+
+                    Understand what you learned today.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="ai-item">
+
+            💼
+
+            <div>
+
+                <h3>Resume Bullet</h3>
+
+                <p>
+
+                    A resume-ready achievement for today's work.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="ai-item">
+
+            📢
+
+            <div>
+
+                <h3>LinkedIn Caption</h3>
+
+                <p>
+
+                    AI generates a professional LinkedIn post instantly.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="streak-warning">
+
+🔥 <strong>You're one submission away from a 13-day streak!</strong>
+
+<p>
+
+Complete today's task to unlock the <strong>Consistency Champion</strong> badge.
+
+</p>
+
+</section>
+
+<!-- ===========================
+     SUBMIT BUTTON
+=========================== -->
+
+<section class="submit-section">
+
+    <button id="submitBtn">
+
+        ✅ Submit Day 12
+
+    </button>
+
+</section>
+
+<!-- Part 3 Starts Here -->
+<!-- ===========================
+     SUCCESS MODAL
+=========================== -->
+
+<div class="success-modal" id="successModal">
+
+    <div class="modal-content">
+
+        <div class="success-icon">
+            🎉
+        </div>
+
+        <h2>Great Work!</h2>
+
+        <p>
+
+            Your Day 12 submission has been received successfully.
+
+        </p>
+
+        <div class="reward-grid">
+
+            <div class="reward-card">
+
+                🔥
+
+                <h3>Current Streak</h3>
+
+                <p>12 Days</p>
+
+            </div>
+
+            <div class="reward-card">
+
+                ⭐
+
+                <h3>XP Earned</h3>
+
+                <p>+120 XP</p>
+
+            </div>
+
+            <div class="reward-card">
+
+                🏆
+
+                <h3>Badge</h3>
+
+                <p>API Explorer</p>
+
+            </div>
+
+        </div>
+
+        <button class="close-btn">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     EDGE CASES
+=========================== -->
+
+<section class="edge-cases">
+
+<h2>Need Help?</h2>
+
+<div class="edge-card">
+
+🔥
+
+<h3>First Day?</h3>
+
+<p>
+
+Welcome! Complete today's challenge to begin your coding streak.
+
+</p>
+
+</div>
+
+<div class="edge-card">
+
+😔
+
+<h3>Missed Yesterday?</h3>
+
+<p>
+
+Don't worry. Restart your streak today and keep learning.
+
+</p>
+
+</div>
+
+<div class="edge-card">
+
+👤
+
+<h3>No GitHub Connected?</h3>
+
+<p>
+
+You can still explore today's task. Add your repository before submitting.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     MOTIVATION CARD
+=========================== -->
+
+<section class="motivation">
+
+<div class="quote-card">
+
+<h2>💡 Daily Motivation</h2>
+
+<p>
+
+"Small progress every day becomes remarkable results."
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     BOTTOM NAVIGATION
+=========================== -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>Home</span>
+
+</a>
+
+<a href="day12.html" class="active">
+
+<i class="fa-solid fa-code"></i>
+
+<span>Challenge</span>
+
+</a>
+
+<a href="leaderboard.html">
+
+<i class="fa-solid fa-trophy"></i>
+
+<span>Leaderboard</span>
+
+</a>
+
+<a href="#">
+
+<i class="fa-solid fa-user"></i>
+
+<span>Profile</span>
+
+</a>
+
+</nav>
+
+<script src="day12.js"></script>
+
+</body>
+
+</html>

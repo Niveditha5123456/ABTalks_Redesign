@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile | ABTalks</title>
+
+<link rel="stylesheet" href="profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="bg-circle circle1"></div>
+<div class="bg-circle circle2"></div>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header class="header">
+
+<a href="dashboard.html" class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<div>
+
+<h2>My Profile</h2>
+
+<p>Track your learning journey</p>
+
+</div>
+
+<i class="fa-solid fa-user profile-icon"></i>
+
+</header>
+
+<!-- ===========================
+PROFILE CARD
+=========================== -->
+
+<section class="profile-card">
+
+<img src="https://i.pravatar.cc/150?img=32"
+alt="Profile">
+
+<h2 id="profileName">
+
+Niveditha S
+
+</h2>
+
+<p id="trackText">
+
+Frontend Development Track
+
+</p>
+
+<p id="bioText">
+
+Building every day to become a better developer 🚀
+
+</p>
+
+<div class="level">
+
+⭐ Level 12 Developer
+
+</div>
+
+<div class="profile-stats">
+
+<div>
+
+<h3>12</h3>
+
+<p>Day Streak</p>
+
+</div>
+
+<div>
+
+<h3>820</h3>
+
+<p>XP</p>
+
+</div>
+
+<div>
+
+<h3>#145</h3>
+
+<p>Rank</p>
+
+</div>
+
+</div>
+
+<button class="edit-btn" type="button">
+
+<i class="fa-solid fa-pen"></i>
+
+Edit Profile
+
+</button>
+<!-- Edit Profile Modal -->
+
+<div class="modal" id="profileModal">
+
+<div class="modal-content">
+
+<h2>Edit Profile</h2>
+
+<input type="text" id="nameInput" placeholder="Your Name">
+
+<input type="text" id="trackInput" placeholder="Track">
+
+<textarea id="bioInput"
+placeholder="Write something about yourself"></textarea>
+
+<div class="modal-buttons">
+
+<button id="saveProfile" type="button">
+
+Save
+
+</button>
+
+<button id="closeModal" type="button">
+
+Cancel
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+PROGRESS
+=========================== -->
+
+<section class="progress-card">
+
+<h2>📈 Challenge Progress</h2>
+
+<div class="progress-circle">
+
+<div class="circle">
+
+20%
+
+</div>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill"></div>
+
+</div>
+
+<p>
+
+12 of 60 Days Completed
+
+</p>
+
+</section>
+
+<!-- ===========================
+BADGES
+=========================== -->
+
+<section class="badges">
+
+<h2>🏅 Badges Earned</h2>
+
+<div class="badge-grid">
+
+<div class="badge">
+
+🔥
+
+<h3>7-Day Streak</h3>
+
+</div>
+
+<div class="badge">
+
+💻
+
+<h3>First Commit</h3>
+
+</div>
+
+<div class="badge">
+
+🚀
+
+<h3>API Explorer</h3>
+
+</div>
+
+<div class="badge">
+
+⭐
+
+<h3>Top Learner</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Part 2 Starts Here -->
+<!-- ===========================
+ACTIVITY CALENDAR
+=========================== -->
+
+<section class="activity">
+
+<h2>📅 Activity Calendar</h2>
+
+<div class="calendar">
+
+<div class="day active"></div>
+<div class="day active"></div>
+<div class="day active"></div>
+<div class="day active"></div>
+<div class="day active"></div>
+<div class="day active"></div>
+<div class="day active"></div>
+
+<div class="day active"></div>
+<div class="day active"></div>
+<div class="day active"></div>
+<div class="day active"></div>
+<div class="day active"></div>
+
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+<div class="day"></div>
+
+<div class="day"></div>
+<div class="day"></div>
+
+</div>
+
+<p>🔥 12 consecutive active days</p>
+
+</section>
+
+<!-- ===========================
+CODING STATISTICS
+=========================== -->
+
+<section class="coding-stats">
+
+<h2>📊 Coding Statistics</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<i class="fa-brands fa-github"></i>
+
+<h3>86</h3>
+
+<p>GitHub Commits</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-brands fa-linkedin"></i>
+
+<h3>12</h3>
+
+<p>LinkedIn Posts</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>12</h3>
+
+<p>Challenges Finished</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>820 XP</h3>
+
+<p>Total Experience</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+AI REFLECTION HISTORY
+=========================== -->
+
+<section class="reflection-history">
+
+<h2>🤖 AI Learning Summary</h2>
+
+<div class="reflection-card">
+
+<h3>Day 12</h3>
+
+<p>
+
+Today you learned how Express middleware intercepts incoming requests and implemented an API rate limiter using in-memory storage.
+
+</p>
+
+</div>
+
+<div class="reflection-card">
+
+<h3>Day 11</h3>
+
+<p>
+
+You explored JWT authentication and secured REST APIs using access tokens.
+
+</p>
+
+</div>
+
+<div class="reflection-card">
+
+<h3>Day 10</h3>
+
+<p>
+
+You built reusable API utilities and improved project structure.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===========================
+QUICK ACTIONS
+=========================== -->
+
+<section class="quick-actions">
+
+<h2>⚡ Quick Actions</h2>
+
+<div class="action-grid">
+
+<a href="day12.html" class="action-card">
+
+<i class="fa-solid fa-code"></i>
+
+<span>Today's Challenge</span>
+
+</a>
+
+<a href="leaderboard.html" class="action-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<span>Leaderboard</span>
+
+</a>
+
+<a href="#" class="action-card">
+
+<i class="fa-brands fa-github"></i>
+
+<span>GitHub</span>
+
+</a>
+
+<a href="#" class="action-card">
+
+<i class="fa-brands fa-linkedin"></i>
+
+<span>LinkedIn</span>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ===========================
+SETTINGS
+=========================== -->
+
+<section class="settings">
+
+<h2>⚙️ Settings</h2>
+
+<div class="setting-card">
+
+<span>
+
+🌙 Dark Mode
+
+</span>
+
+<label class="switch">
+
+<input type="checkbox" checked>
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+<div class="setting-card">
+
+<span>
+
+🔔 Daily Reminder
+
+</span>
+
+<label class="switch">
+
+<input type="checkbox" checked>
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+</section>
+
+<!-- Part 3 Starts Here -->
+<!-- ===========================
+NEXT BADGE
+=========================== -->
+
+<section class="next-badge">
+
+<h2>🏆 Next Badge</h2>
+
+<div class="next-badge-card">
+
+<div class="badge-icon">
+
+🥇
+
+</div>
+
+<div>
+
+<h3>Consistency Champion</h3>
+
+<p>
+
+Complete <strong>3 more days</strong> to unlock this badge.
+
+</p>
+
+<div class="badge-progress">
+
+<div class="badge-fill"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+WEEKLY GOAL
+=========================== -->
+
+<section class="weekly-goal">
+
+<h2>🎯 Weekly Goal</h2>
+
+<div class="goal-card">
+
+<h3>Complete 7 Challenges This Week</h3>
+
+<p>Progress: <strong>5 / 7</strong></p>
+
+<div class="goal-progress">
+
+<div class="goal-fill"></div>
+
+</div>
+
+<p class="goal-text">
+
+You're almost there! Keep your streak alive.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===========================
+DAILY MOTIVATION
+=========================== -->
+
+<section class="motivation">
+
+<div class="quote-card">
+
+<h2>💡 Daily Motivation</h2>
+
+<p>
+
+"The expert in anything was once a beginner who never gave up."
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===========================
+BOTTOM NAVIGATION
+=========================== -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>Home</span>
+
+</a>
+
+<a href="day12.html">
+
+<i class="fa-solid fa-code"></i>
+
+<span>Challenge</span>
+
+</a>
+
+<a href="leaderboard.html">
+
+<i class="fa-solid fa-trophy"></i>
+
+<span>Leaderboard</span>
+
+</a>
+
+<a href="profile.html" class="active">
+
+<i class="fa-solid fa-user"></i>
+
+<span>Profile</span>
+
+</a>
+
+</nav>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer>
+
+<p>
+
+🚀 Keep learning, keep building, and let every commit bring you closer to your dream career.
+
+</p>
+
+<p class="copyright">
+
+© 2026 ABTalks • 60-Day Coding Challenge
+
+</p>
+
+</footer>
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>
